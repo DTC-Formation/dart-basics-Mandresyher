@@ -1,9 +1,7 @@
 import 'dart:math';
 
 void main(){
-  teny("k");
-  isa(2, 0);
-  azo(5);
+  print(calculerFactorielle(5));
 }
 //V et C
     
@@ -35,4 +33,12 @@ int azo(int z) {
   }
   print(tsara);
   return tsara;
+}
+
+int calculerFactorielle(int n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * calculerFactorielle(n - 1);
+  }
 }
